@@ -4,7 +4,7 @@ interface mul_if(input bit clk);
        	logic [31:0] fp_Y;
 	logic [31:0] fp_Z;
 	logic ovrf;
-	logic undrf;
+	logic udrf;
 
 	clocking cb @(posedge clk);
 		default input #1step output #3ns;
@@ -13,6 +13,6 @@ interface mul_if(input bit clk);
        	        input fp_Y;
 	        input fp_Z;
 		output ovrf;
-		output undrf;
+		output udrf;
 	endclocking
 endinterface
