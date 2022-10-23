@@ -11,7 +11,7 @@ interface mul_if(input bit clk);
 		input r_mode;
 	        input fp_X;
        	        input fp_Y;
-	        input fp_Z;
+	        output fp_Z;
 		output ovrf;
 		output udrf;
 	endclocking
