@@ -5,6 +5,7 @@ class driver extends uvm_driver #(multiplication_item);
 	 endfunction
 
 	 virtual mul_if vif;
+	 uvm_seq_item_pull_port #(multiplication_item) seq_item_port;
 
 	 virtual task run_phase(uvm_phase phase);
 	 	super.run_phase(phase);
