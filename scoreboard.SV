@@ -1,8 +1,11 @@
 class scoreboard extends uvm_scoreboard;
 	`uvm_component_utils(scoreboard)
+
 	function new(string name = "scoreboard", uvm_component parent = null);
 		super.new(string, parent);
 	endfunction
+
+	uvm_seq_item_pull_imp #(multiplication_item) seq_item_export;
 
 	bit [`LENGTH-1:0] X;
 	bit [`LENGTH-1:0] Y;
