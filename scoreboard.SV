@@ -21,6 +21,7 @@ class scoreboard extends uvm_scoreboard;
 	virtual function write(multiplication_item mul_item);
 		//código de verificación
 	endfunction
+endclass
 
 
 	
