@@ -1,4 +1,4 @@
-class base_test extends (uvm_test);
+class base_test extends uvm_test;
 	`uvm_component_utils(base_test)
 	function new(string nae = "base_test", uvm_component parent = null);
 		super.new(name, parent);
@@ -16,7 +16,7 @@ class base_test extends (uvm_test);
 		seq.randomize();
 	endfunction
 
-	virtual rask run_phase(uvm_phase phase);
+	virtual task run_phase(uvm_phase phase);
 		phase.raise_objection(this);
 		seq.start(e0.a0.s0);
 		#100
