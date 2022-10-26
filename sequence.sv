@@ -6,7 +6,7 @@ class item_sequence extends uvm_sequence;
 
 	rand int num_items;
 
-	constraint num_items_cons {num_items >= 10; num_items <= 500}
+	constraint num_items_cons {num_items >= 10; num_items <= 500;}
 
 	virtual task body();
 		for(int i = 0; i < num_items; i++)begin

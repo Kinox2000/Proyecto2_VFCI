@@ -4,9 +4,9 @@ class multiplication_item extends uvm_sequence_item;
 	rand bit [31:0] fp_X;
 	rand bit [31:0] fp_Y;
 	
-	output bit [31:0] fp_Z;
-	output bit ovrf;
-	output bit udrf;
+	bit [31:0] fp_Z;
+	bit ovrf;
+	bit udrf;
 
 	function new(string name = "multiplication_item");
 		super.new(name);
@@ -20,6 +20,6 @@ class multiplication_item extends uvm_sequence_item;
 		super.do_print(printer);
 		printer.print_field_int("r_mode: ", r_mode, $bits(r_mode), UVM_HEX);
 		printer.print_field_int("fp_X: ", fp_X, $bits(fp_X), UVM_HEX);
-		printer.print_field_int("fp_Y: ", fp_Y $bits(fp_Y), UVM_HEX);
+		printer.print_field_int("fp_Y: ", fp_Y, $bits(fp_Y), UVM_HEX);
 	endfunction
 endclass
