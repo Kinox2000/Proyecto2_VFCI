@@ -13,7 +13,7 @@ class item_sequence extends uvm_sequence;
 			multiplication_item mul_item = multiplication_item::type_id::create("mul_item");
 			start_item(mul_item);
 			mul_item.randomize;
-			finis_item(mul_item);
+			finish_item(mul_item);
 		end
         endtask;
 endclass
