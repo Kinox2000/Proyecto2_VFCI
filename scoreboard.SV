@@ -20,6 +20,7 @@ class scoreboard extends uvm_scoreboard;
 
 	virtual function write(multiplication_item mul_item);
 		//código de verificación
+		`uvm_info("Scoreboard", $sformatf("Inició el scoreboard"), UVM_HIGH);
 	endfunction
 endclass
 
