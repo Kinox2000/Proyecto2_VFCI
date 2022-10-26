@@ -1,5 +1,5 @@
 class driver extends uvm_driver #(multiplication_item);
-	 `uvm_component-utils(driver)
+	 `uvm_component_utils(driver)
 	 function new(string name = "driver", uvm_component_parent = null);
 		 super.new(name, parent);
 	 endfunction
@@ -9,7 +9,7 @@ class driver extends uvm_driver #(multiplication_item);
 
 	 virtual task run_phase(uvm_phase phase);
 	 	super.run_phase(phase);
-		forever begin()
+		forever begin
 			multiplication_item mul_item;
 			`uvm_info("Driver: ", $sformatf("Esperando un sequence_item desde el secuenciador"), UVM_HIGH);
 			seq_item_port.get_next_item(mul_item);
