@@ -1,6 +1,6 @@
 class base_test extends uvm_test;
 	`uvm_component_utils(base_test)
-	function new(string nae = "base_test", uvm_component parent = null);
+	function new(string name = "base_test", uvm_component parent = null);
 		super.new(name, parent);
 	endfunction
 

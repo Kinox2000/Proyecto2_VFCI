@@ -1,6 +1,6 @@
 class driver extends uvm_driver #(multiplication_item);
 	 `uvm_component_utils(driver)
-	 function new(string name = "driver", uvm_component_parent = null);
+	 function new(string name = "driver", uvm_component parent = null);
 		 super.new(name, parent);
 	 endfunction
 
@@ -14,10 +14,10 @@ class driver extends uvm_driver #(multiplication_item);
 			`uvm_info("Driver: ", $sformatf("Esperando un sequence_item desde el secuenciador"), UVM_HIGH);
 			seq_item_port.get_next_item(mul_item);
 			@(vif.cb);
-			  vif.cb.r_mode = mul_item.r_mode;
-			  vif.cb.fp_X = mul_item.fp_X;
-			  vif.cb.fp_Y = mul_item.fp_Y;
-			mul_item.do_print();
+			  vif.r_mode = mul_item.r_mode;
+			  vif.fp_X = mul_item.fp_X;
+			  vif.fp_Y = mul_item.fp_Y;
+			//mul_item.do_print();
 			seq_item_port.item_done();
 		end
 	endtask

@@ -5,7 +5,7 @@ class scoreboard extends uvm_scoreboard;
 		super.new(name, parent);
 	endfunction
 
-	uvm_seq_item_pull_imp #(multiplication_item) seq_item_export;
+	//uvm_seq_item_pull_imp #(multiplication_item) seq_item_export;
 
 	bit [`LENGTH-1:0] X;
 	bit [`LENGTH-1:0] Y;
