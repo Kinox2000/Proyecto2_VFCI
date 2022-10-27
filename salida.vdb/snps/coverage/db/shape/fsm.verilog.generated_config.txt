@@ -1,6 +1,6 @@
 // Synopsys, Inc.
 // User: ESTEBAN_CASTRO
-// Date: Thu Oct 27 00:05:07 2022
+// Date: Thu Oct 27 00:27:25 2022
 
 // ==================================================================================================
 // This config file prototype is produced from the last run using the complete list of extracted fsms.

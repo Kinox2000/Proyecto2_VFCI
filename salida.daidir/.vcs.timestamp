@@ -667,8 +667,8 @@ LOADEDMODULES=
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 LC_ALL=C
 HISTCONTROL=ignoredups
-GNOME_TERMINAL_SERVICE=:1.367
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/24c9eee7_4bec_4c49_9a96_7b3d591d13fb
+GNOME_TERMINAL_SERVICE=:1.368
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/12ad92e3_1454_4d67_8327_fdeff406614f
 GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 DBUS_STARTER_BUS_TYPE=session
 DBUS_STARTER_ADDRESS=unix:abstract=/tmp/dbus-Dbahw625mm,guid=318fc3d527323661782c7eb26345dc02
@@ -854,5 +854,5 @@ BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBU
 1631316244 /mnt/vol_NFS_rh003/tools/vcs/R-2020.12-SP2/linux64/lib/liberrorinf.so
 1631316235 /mnt/vol_NFS_rh003/tools/vcs/R-2020.12-SP2/linux64/lib/libsnpsmalloc.so
 1631316245 /mnt/vol_NFS_rh003/tools/vcs/R-2020.12-SP2/linux64/lib/libvfs.so
-1666850820 salida.daidir
+1666852177 salida.daidir
 -1 partitionlib
