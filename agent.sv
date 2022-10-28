@@ -17,6 +17,6 @@ class agent extends uvm_agent;
 
 	virtual function void connect_phase(uvm_phase phase);
 		super.connect_phase(phase);
-		d0.seq_item_port.connect(s0.seq_item_export);
+		d0.seq_item_port.connect(s0.seq_item_export);//Revisar el error
 	endfunction
 endclass

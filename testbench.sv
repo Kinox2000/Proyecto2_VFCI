@@ -1,6 +1,6 @@
 //`timescale 1ns/ps
 `include "uvm_macros.svh"
-`define LENGTH 4
+`define LENGTH 32
 import uvm_pkg::*;
 `include "multiplicador_32_bits_FP_IEEE.sv.txt"
 `include "interface.sv"
