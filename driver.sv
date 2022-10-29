@@ -5,7 +5,12 @@ class driver extends uvm_driver #(multiplication_item);
 	 endfunction
 
 	 virtual mul_if vif;
-	 uvm_seq_item_pull_port #(multiplication_item) seq_item_port;
+
+	virtual function void build_phase(uvm_phase phase);
+		super.build_phase(phase);
+		if(!uvm_config_db#(virtual mul_if)::get(this, "", "mul_if", vif))
+		  `uvm_fatal("Driver", "No se pudo obtener la interfaz")
+	endfunction
 
 	 virtual task run_phase(uvm_phase phase);
 	 	super.run_phase(phase);

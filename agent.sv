@@ -10,9 +10,10 @@ class agent extends uvm_agent;
 
 	virtual function void build_phase(uvm_phase phase);
 		super.build_phase(phase);
+		s0 = uvm_sequencer#(multiplication_item)::type_id::create("s0", this);
 		d0 = driver::type_id::create("d0", this);
 		m0 = monitor::type_id::create("m0", this);
-		s0 = uvm_sequencer#(multiplication_item)::type_id::create("s0", this);
+		
 	endfunction
 
 	virtual function void connect_phase(uvm_phase phase);

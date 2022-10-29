@@ -13,8 +13,8 @@ class item_sequence extends uvm_sequence;
 			multiplication_item mul_item = multiplication_item::type_id::create("mul_item");
 			start_item(mul_item);
 			mul_item.randomize;
-			`uvm_info("Sequence: ", $sformatf("Objeto: %0d %s", num_items,mul_item.print()), UVM_LOW);
+			`uvm_info("Sequence: ", $sformatf("Objeto: %0d %s", num_items, mul_item.print()), UVM_LOW);
 			finish_item(mul_item);
 		end
-        endtask;
+        endtask
 endclass

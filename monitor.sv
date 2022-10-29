@@ -9,6 +9,9 @@ class monitor extends uvm_monitor;
 
 	virtual function void build_phase(uvm_phase phase);
 	  super.build_phase(phase);
+	  if(!uvm_config_db#(virtual mul_if)::get(this, "", "mul_if", vif)) begin
+		`uvm_fatal("Driver", "No se pudo obtener la interfaz")
+	  end
 	  mon_analysis_port = new("mon_analysis_port", this);
         endfunction
 
