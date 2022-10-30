@@ -11,6 +11,8 @@ class base_test extends uvm_test;
 	virtual function void build_phase(uvm_phase phase);
 		super.build_phase(phase);
 		e0 = environment::type_id::create("e0", this);
+   		if (!uvm_config_db#(virtual mul_if)::get(this, "", "mul_vif", vif))
+			`uvm_fatal("Test", "Error no se encontró  vif")
 		uvm_config_db#(virtual mul_if)::set(this, "e0.a0*", "mul_if", vif);
 		seq = item_sequence::type_id::create("seq");
 		seq.randomize();
