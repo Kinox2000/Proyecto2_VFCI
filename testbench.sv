@@ -2,7 +2,7 @@
 `include "uvm_macros.svh"
 `define LENGTH 32
 import uvm_pkg::*;
-`include "multiplicador_32_bits_FP_IEEE.sv.txt"
+`include "multiplicador_32_bits_FP_IEEE.sv"
 `include "interface.sv"
 `include "sequence_item.sv"
 `include "sequence.sv"
@@ -18,6 +18,7 @@ module tb;
 
 	always #10 clk = ~clk;
 	mul_if _if(clk);
+
 	top u0 (.clk(clk),
 		 .r_mode(_if.r_mode), 
 		 .fp_X(_if.fp_X), 
