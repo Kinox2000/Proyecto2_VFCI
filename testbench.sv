@@ -8,8 +8,8 @@ import uvm_pkg::*;
 `include "sequence.sv"
 `include "monitor.sv"
 `include "driver.sv"
-`include "scoreboard.sv"
 `include "agent.sv"
+`include "scoreboard.sv"
 `include "environment.sv"
 `include "test.sv"
 
@@ -17,9 +17,9 @@ module tb;
 	reg clk;
 
 	always #10 clk = ~clk;
-	mul_if _if(clk);
+	mul_if _if(.clk(clk));
 
-	top u0 (.clk(clk),
+	top u0 (.clk(_if.clk),
 		 .r_mode(_if.r_mode), 
 		 .fp_X(_if.fp_X), 
 		 .fp_Y(_if.fp_Y), 
@@ -28,7 +28,7 @@ module tb;
 		 .udrf(_if.udrf));
 	 initial begin
 		 clk <= 0;
-		 uvm_config_db#(virtual mul_if)::set(null, "uvm_test_top", "mul_if", _if);
+		 uvm_config_db #(virtual mul_if)::set(null, "uvm_test_top", "_if", _if);
 		 run_test("base_test");
 	 end
 

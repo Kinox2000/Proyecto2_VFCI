@@ -28,6 +28,7 @@ class monitor extends uvm_monitor;
 		    mul_item.ovrf = vif.ovrf;
 		    mul_item.udrf = vif.udrf;
 		    mon_analysis_port.write(mul_item);
+		    `uvm_info("Monitor: ", $sformatf("Objeto: %s", mul_item.print()), UVM_HIGH);
 		    //`uvm_info("Monitor: ", $sfotmatf("Item: ", mul_item.do_print()), UVM_MEDIUM)
 	    end
 	  end

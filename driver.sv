@@ -24,6 +24,7 @@ class driver extends uvm_driver #(multiplication_item);
 			  vif.fp_Y = mul_item.fp_Y;
 			//mul_item.do_print();
 			seq_item_port.item_done();
+			`uvm_info("Driver: ", $sformatf("Objeto: %s", mul_item.print()), UVM_HIGH);
 		end
 	endtask
 endclass

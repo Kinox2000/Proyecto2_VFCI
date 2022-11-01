@@ -11,17 +11,23 @@ class base_test extends uvm_test;
 	virtual function void build_phase(uvm_phase phase);
 		super.build_phase(phase);
 		e0 = environment::type_id::create("e0", this);
-   		if (!uvm_config_db#(virtual mul_if)::get(this, "", "mul_vif", vif))
-			`uvm_fatal("Test", "Error no se encontró  vif")
-		uvm_config_db#(virtual mul_if)::set(this, "e0.a0*", "mul_if", vif);
+   		if (!uvm_config_db#(virtual mul_if)::get(this,"","_if",vif))
+			`uvm_fatal("Test", "Error, no se encontró  vif")
+		uvm_config_db#(virtual mul_if)::set(this, "e0.a0.*", "mul_if", vif);
 		seq = item_sequence::type_id::create("seq");
 		seq.randomize();
 	endfunction
 
 	virtual task run_phase(uvm_phase phase);
 		phase.raise_objection(this);
+		vif.r_mode=3'b000;
+	        vif.fp_X=32'b0000_0000_0000_0000_0000_0000_0000_0000;
+       	        vif.fp_Y=32'b0000_0000_0000_0000_0000_0000_0000_0000;
+	        vif.fp_Z=32'b0000_0000_0000_0000_0000_0000_0000_0000;
+		vif.ovrf=0;
+		vif.udrf=0;
 		seq.start(e0.a0.s0);
-		#100
+		//#100
 		phase.drop_objection(this);
 	endtask
 
