@@ -30,7 +30,7 @@ module tb;
 		 clk <= 0;
        uvm_top.set_report_verbosity_level(UVM_HIGH);
 		 uvm_config_db #(virtual mul_if)::set(null, "uvm_test_top", "_if", _if);
-		 run_test("test_random");
+		 run_test("test_max_alter");
 	 end
 
 endmodule
