@@ -6,13 +6,13 @@ interface mul_if(input bit clk);
 	logic ovrf;
 	logic udrf;
 
-	clocking cb @(posedge clk);
-		default input #1step output #3ns;
-		input r_mode;
-	        input fp_X;
-       	        input fp_Y;
-	        output fp_Z;
-		output ovrf;
-		output udrf;
-	endclocking
+	//clocking cb @(posedge clk);
+	//	default input #1step output #3ns;
+	//	input r_mode;
+	//        input fp_X;
+       	//        input fp_Y;
+	//        output fp_Z;
+	//	output ovrf;
+	//	output udrf;
+	//endclocking
 endinterface
