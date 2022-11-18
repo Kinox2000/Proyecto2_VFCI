@@ -36,10 +36,12 @@ class scoreboard extends uvm_scoreboard;
 		sign_Y = mul_item.fp_Y[31];
 
 		if((mul_item.fp_X[30:23]+mul_item.fp_Y[30:23])<=8'b0111_1111)begin
-			udrf = 1'b1;
+			udrf = 1'b0;
+			ovrf = 1'b1;
 		end
 		if((mul_item.fp_X[30:23]+mul_item.fp_Y[30:23])>=(8'b0111_1111+8'b1111_1111))begin
 			ovrf = 1'b1;
+			udrf = 1'b0;
 		end
 		e = mul_item.fp_X[30:23]+mul_item.fp_Y[30:23]-8'b0111_1111;
 		sign_Z = sign_X^sign_Y;
@@ -161,7 +163,7 @@ class scoreboard extends uvm_scoreboard;
 				end
 				if(out_Z[30:0]!=mul_item.fp_Z[30:0])begin
 					`uvm_error("Error", "Scoreboard y DUT no coinciden")
-					`uvm_info("Scoreboard: ", $sformatf("Salida esperada: Salida del DUT: %b %b", out_Z, mul_item.fp_Z), UVM_LOW);
+					`uvm_info("Scoreboard: ", $sformatf("Udrf: Salida esperada: Salida del DUT: %b %b", out_Z, mul_item.fp_Z), UVM_LOW);
 				end
 			end
 			if(ovrf == 1'b1) begin
@@ -172,7 +174,7 @@ class scoreboard extends uvm_scoreboard;
 					`uvm_info("Scoreboard", $sformatf("udrf: %b", mul_item.ovrf), UVM_HIGH);
 				end
 				if(out_Z[30:0]!=mul_item.fp_Z[30:0])begin
-					`uvm_error("Error", "Scoreboard y DUT no coinciden")
+					`uvm_error("Error", "Ovrf: Scoreboard y DUT no coinciden")
 					`uvm_info("Scoreboard", $sformatf("Salida esperada: Salida del DUT: %b %b", out_Z, mul_item.fp_Z), UVM_LOW);
 				end
 			end
