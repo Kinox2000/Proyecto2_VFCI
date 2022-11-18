@@ -39,7 +39,7 @@ class item_sequence_sp extends uvm_sequence;
     bit [31:0] fp_Y;
     rand bit [2:0] r_mode;
 
-  constraint num_items_cons {num_items >= 3; num_items <= 200;}
+   constraint num_items_cons {num_items >= 2; num_items <= 10;}
 
 	virtual task body();
 		for(int i = 0; i < num_items; i++)begin
@@ -57,11 +57,11 @@ endclass
 
 //item para casos de error underflow
 class item_sequence_underflow extends uvm_sequence;
-	`uvm_object_utils_begin(item_sequence_underflow)
-      `uvm_field_int(fp_X, UVM_DEFAULT)
-      `uvm_field_int(fp_Y, UVM_DEFAULT)
-      `uvm_field_int(r_mode, UVM_DEFAULT)
-    `uvm_object_utils_end
+	`uvm_object_utils(item_sequence_underflow)
+     // `uvm_field_int(fp_X, UVM_DEFAULT)
+     // `uvm_field_int(fp_Y, UVM_DEFAULT)
+     // `uvm_field_int(r_mode, UVM_DEFAULT)
+    //`uvm_object_utils_end
   
 
 	function new(string name = "item_sequence_underflow");
@@ -69,20 +69,17 @@ class item_sequence_underflow extends uvm_sequence;
 	endfunction
 
 	rand int num_items;
-    bit [31:0] fp_X;
-    bit [31:0] fp_Y;
-    rand bit [2:0] r_mode;
 
-  constraint num_items_cons {num_items >= 3; num_items <= 200;}
+
+  constraint num_items_cons {num_items >= 2; num_items <= 10;}
 
 	virtual task body();
 		for(int i = 0; i < num_items; i++)begin
           multiplication_item mul_item_underflow = multiplication_item::type_id::create("mul_item_underflow");
           mul_item_underflow.underflow.constraint_mode(1);
+          mul_item_underflow.randomize;
           start_item(mul_item_underflow);
-          mul_item_underflow.r_mode= this.r_mode;
-          mul_item_underflow.fp_X=this.fp_X;
-          mul_item_underflow.fp_Y=this.fp_Y;
+
           `uvm_info("Sequence: ", $sformatf("Objeto: %0d %s", num_items, mul_item_underflow.print()), UVM_HIGH);
           finish_item(mul_item_underflow);
 		end

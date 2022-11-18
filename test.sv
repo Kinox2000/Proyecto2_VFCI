@@ -54,7 +54,7 @@ class test_max_alter extends base_test;
     super.new(name, parent);
   endfunction
   
-  bit [31:0] operadores[2] = {32'hAAAA, 32'h5555};
+  bit [31:0] operadores[2] = {32'hAAAAAAAA, 32'h55555555};
   virtual function void build_phase(uvm_phase phase);
     super.build_phase(phase);
   endfunction
