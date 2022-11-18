@@ -1,14 +1,14 @@
-/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI/agent.sv
-/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI/driver.sv
-/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI/environment.sv
-/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI/interface.sv
-/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI/monitor.sv
-/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI/multiplicador_32_bits_FP_IEEE.sv
-/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI/scoreboard.sv
-/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI/sequence.sv
-/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI/sequence_item.sv
-/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI/test.sv
-/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI/testbench.sv
+/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI (copy)/agent.sv
+/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI (copy)/driver.sv
+/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI (copy)/environment.sv
+/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI (copy)/interface.sv
+/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI (copy)/monitor.sv
+/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI (copy)/multiplicador_32_bits_FP_IEEE.sv
+/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI (copy)/scoreboard.sv
+/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI (copy)/sequence.sv
+/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI (copy)/sequence_item.sv
+/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI (copy)/test.sv
+/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI (copy)/testbench.sv
 /mnt/vol_NFS_rh003/tools/vcs/R-2020.12-SP2/etc/uvm/base/uvm_barrier.svh
 /mnt/vol_NFS_rh003/tools/vcs/R-2020.12-SP2/etc/uvm/base/uvm_base.svh
 /mnt/vol_NFS_rh003/tools/vcs/R-2020.12-SP2/etc/uvm/base/uvm_bottomup_phase.svh

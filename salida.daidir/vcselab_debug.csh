@@ -1,6 +1,6 @@
 #!/bin/csh -f
 
-cd /home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI
+cd /home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI (copy)
 
 #This ENV is used to avoid overriding current script in next vcselab run 
 setenv SNPS_VCSELAB_SCRIPT_NO_OVERRIDE  1

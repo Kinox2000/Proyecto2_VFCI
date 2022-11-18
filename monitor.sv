@@ -30,7 +30,8 @@ class monitor extends uvm_monitor;
 		    mul_item.udrf = vif.udrf;
 		    mul_item.mul_time = $time; 
 		    mon_analysis_port.write(mul_item);
-		    //`uvm_info("Monitor: ", $sformatf("r_mode fp_Y fp_Y fp_Z:%b %b %b %b", mul_item.r_mode, mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z), UVM_HIGH);
+
+		    `uvm_info("Monitor: ", $sformatf("r_mode fp_Y fp_Y fp_Z:%h %h %h %h", mul_item.r_mode, mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z), UVM_LOW);
 		    //`uvm_info("Monitor: ", $sfotmatf("Item: ", mul_item.do_print()), UVM_MEDIUM)
 	    end
 	  end

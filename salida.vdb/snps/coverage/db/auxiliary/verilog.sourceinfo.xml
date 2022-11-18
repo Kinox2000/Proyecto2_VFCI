@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE cov SYSTEM "ucdb_srcinfo.dtd">
-  <srcinfo name="/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI"  >
+  <srcinfo name="/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI (copy)"  >
     <ucapi_version  major_ver="13"  minor_ver="1"  patch_str="R-2020.12-SP2"  />
       <fileinfo name="/mnt/vol_NFS_rh003/tools/vcs/R-2020.12-SP2/etc/uvm/uvm_pkg.sv"  id="0"  timestamp="1631316522"  />
       <fileinfo name="/mnt/vol_NFS_rh003/tools/vcs/R-2020.12-SP2/etc/uvm/uvm_macros.svh"  id="1"  timestamp="1631316522"  />
@@ -152,16 +152,16 @@
       <fileinfo name="/mnt/vol_NFS_rh003/tools/vcs/R-2020.12-SP2/etc/uvm/verdi/uvm_verdi_reg_recording.sv"  id="147"  timestamp="1631316523"  />
       <fileinfo name="/mnt/vol_NFS_rh003/tools/verdi/R-2020.12-SP2/share/PLI/VCS/include/verdi_trans_recorder_dpi.svh"  id="148"  timestamp="1631317894"  />
       <fileinfo name="/mnt/vol_NFS_rh003/tools/vcs/R-2020.12-SP2/etc/uvm/verdi/uvm_verdi_pli.svh"  id="149"  timestamp="1631316523"  />
-      <fileinfo name="testbench.sv"  id="150"  timestamp="1667246322"  />
+      <fileinfo name="testbench.sv"  id="150"  timestamp="1668742007"  />
       <fileinfo name="multiplicador_32_bits_FP_IEEE.sv"  id="151"  timestamp="1666812661"  />
       <fileinfo name="interface.sv"  id="152"  timestamp="1667333010"  />
-      <fileinfo name="sequence_item.sv"  id="153"  timestamp="1667490319"  />
-      <fileinfo name="sequence.sv"  id="154"  timestamp="1668532460"  />
-      <fileinfo name="monitor.sv"  id="155"  timestamp="1668541783"  />
-      <fileinfo name="driver.sv"  id="156"  timestamp="1668542965"  />
-      <fileinfo name="agent.sv"  id="157"  timestamp="1667054680"  />
-      <fileinfo name="scoreboard.sv"  id="158"  timestamp="1668542529"  />
+      <fileinfo name="sequence_item.sv"  id="153"  timestamp="1668741402"  />
+      <fileinfo name="sequence.sv"  id="154"  timestamp="1668741807"  />
+      <fileinfo name="monitor.sv"  id="155"  timestamp="1668714676"  />
+      <fileinfo name="driver.sv"  id="156"  timestamp="1668714380"  />
+      <fileinfo name="scoreboard.sv"  id="157"  timestamp="1668741756"  />
+      <fileinfo name="agent.sv"  id="158"  timestamp="1667054680"  />
       <fileinfo name="environment.sv"  id="159"  timestamp="1666814457"  />
-      <fileinfo name="test.sv"  id="160"  timestamp="1667245841"  />
+      <fileinfo name="test.sv"  id="160"  timestamp="1668739227"  />
       <fileinfo name=""  id="161"  />
     </srcinfo>

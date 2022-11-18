@@ -147,9 +147,10 @@ class scoreboard extends uvm_scoreboard;
 
 		if(out_Z == mul_item.fp_Z) begin
 			`uvm_info("Scoreboard", $sformatf("Correcto"), UVM_LOW);
-			`uvm_info("Scoreboard", $sformatf("Salida esperada: %h", out_Z), UVM_MEDIUM);
+			`uvm_info("Scoreboard", $sformatf("Salida esperada dut: %h", out_Z), UVM_MEDIUM);
 			`uvm_info("Scoreboard", $sformatf("Salida esperada: %h", mul_item.fp_Z), UVM_MEDIUM);
 		end
+
 		else begin
 			if(udrf == 1'b1) begin
 				out_Z[30:0] = 31'b0000_0000_0000_0000_0000_0000_0000_000;
@@ -177,7 +178,7 @@ class scoreboard extends uvm_scoreboard;
 			end
 
 			else begin
-				`uvm_error("Error", "Scoreboard y DUT no coinciden")
+				`uvm_error("Error", "Scoreboard y DUT no coinciden-----")
 				`uvm_info("Scoreboard", $sformatf("Redondeo: %b", mul_item.r_mode), UVM_HIGH);
 				`uvm_info("Scoreboard", $sformatf("Signo: %b", sign_Z), UVM_HIGH);
 				`uvm_info("Scoreboard", $sformatf("Salida esperada: Salida del DUT: %b %b", out_Z, mul_item.fp_Z), UVM_HIGH);

@@ -8,8 +8,8 @@ import uvm_pkg::*;
 `include "sequence.sv"
 `include "monitor.sv"
 `include "driver.sv"
-`include "agent.sv"
 `include "scoreboard.sv"
+`include "agent.sv"
 `include "environment.sv"
 `include "test.sv"
 
@@ -28,8 +28,9 @@ module tb;
 		 .udrf(_if.udrf));
 	 initial begin
 		 clk <= 0;
+       uvm_top.set_report_verbosity_level(UVM_HIGH);
 		 uvm_config_db #(virtual mul_if)::set(null, "uvm_test_top", "_if", _if);
-		 run_test("base_test");
+		 run_test("test_random");
 	 end
 
 endmodule
