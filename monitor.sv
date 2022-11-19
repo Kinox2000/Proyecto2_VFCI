@@ -18,22 +18,18 @@ class monitor extends uvm_monitor;
 	virtual task run_phase(uvm_phase phase);
 	  super.run_phase(phase);
 
-	  forever begin
-		  //@(vif.cb); begin
-		  @(vif.clk); begin
-		    multiplication_item mul_item = multiplication_item::type_id::create("mul_item");
-		    mul_item.r_mode = vif.r_mode;
-		    mul_item.fp_X = vif.fp_X;
-		    mul_item.fp_Y = vif.fp_Y;
-		    mul_item.fp_Z = vif.fp_Z;
-		    mul_item.ovrf = vif.ovrf;
-		    mul_item.udrf = vif.udrf;
-		    mul_item.mul_time = $time; 
-		    mon_analysis_port.write(mul_item);
-
-		    `uvm_info("Monitor: ", $sformatf("r_mode fp_Y fp_Y fp_Z:%h %h %h %h", mul_item.r_mode, mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z), UVM_LOW);
-		    //`uvm_info("Monitor: ", $sfotmatf("Item: ", mul_item.do_print()), UVM_MEDIUM)
-	    end
+      forever @(vif.cb) begin
+        multiplication_item mul_item = multiplication_item::type_id::create("mul_item");
+		mul_item.r_mode = vif.r_mode;
+	    mul_item.fp_X = vif.fp_X;
+	    mul_item.fp_Y = vif.fp_Y;
+	    mul_item.fp_Z = vif.cb.fp_Z;
+	    mul_item.ovrf = vif.cb.ovrf;
+	    mul_item.udrf = vif.cb.udrf;
+	    mul_item.mul_time = $time; 
+	    mon_analysis_port.write(mul_item);
+        `uvm_info("Monitor: ", $sformatf("r_mode fp_X fp_Y fp_Z:%h %h %h %h", mul_item.r_mode, mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z), UVM_LOW);
+		 //`uvm_info("Monitor: ", $sfotmatf("Item: ", mul_item.do_print()), UVM_MEDIUM)
 	  end
   	endtask
 

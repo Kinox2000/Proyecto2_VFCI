@@ -20,13 +20,21 @@ class driver extends uvm_driver #(multiplication_item);
 			for (int i = 0; i<mul_item.delay; i++) begin
 				#1;
 			end
-			mul_item.mul_time = $time;			
-			@(vif.clk);
-			  vif.r_mode = mul_item.r_mode;
-			  vif.fp_X = mul_item.fp_X;
-			  vif.fp_Y = mul_item.fp_Y;
+			mul_item.mul_time = $time;	
+            drive_item(mul_item);
+			//@(vif.clk);
+			  //vif.r_mode = mul_item.r_mode;
+			  //vif.fp_X = mul_item.fp_X;
+			  //vif.fp_Y = mul_item.fp_Y;
 			seq_item_port.item_done();
 			`uvm_info("Driver", $sformatf("Objeto: r_mode %b fp_X %h fp_X %h delay %d tiempo %d", vif.r_mode, vif.fp_X, vif.fp_Y, mul_item.delay, mul_item.mul_time), UVM_LOW);
 		end
 	endtask
+      
+    virtual task drive_item(multiplication_item mul_item);
+      @(vif.cb);
+      vif.cb.r_mode <= mul_item.r_mode;
+      vif.cb.fp_X <= mul_item.fp_X;
+      vif.cb.fp_Y <= mul_item.fp_Y;
+    endtask 
 endclass

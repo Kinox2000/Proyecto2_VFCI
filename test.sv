@@ -54,7 +54,7 @@ class test_max_alter extends base_test;
     super.new(name, parent);
   endfunction
   
-  bit [31:0] operadores[2] = {32'hAAAAAAAA, 32'h55555555};
+  bit [31:0] operadores[2] = {32'h8b9e3f6e , 32'hb465c528};
   virtual function void build_phase(uvm_phase phase);
     super.build_phase(phase);
   endfunction
@@ -94,6 +94,46 @@ class test_underflow extends base_test;
     `uvm_info("Escenario_2", $sformatf("\n Test Uso Underflow\n"), UVM_LOW)
     phase.raise_objection(this);
     trans_underflow.start(e0.a0.s0);
+    #100
+    phase.drop_objection(this);
+  endtask
+endclass
+
+class test_overflow extends base_test;
+  `uvm_component_utils (test_overflow)
+  function new(string name = "test_overflow", uvm_component parent = null);
+    super.new(name, parent);
+  endfunction
+  
+  virtual function void build_phase(uvm_phase phase);
+    super.build_phase(phase);
+  endfunction
+  virtual task run_phase(uvm_phase phase);
+    item_sequence_overflow trans_overflow = item_sequence_overflow::type_id::create("trans_overflow");
+    trans_overflow.randomize();
+    `uvm_info("Escenario_2", $sformatf("\n Test Uso overflow\n"), UVM_LOW)
+    phase.raise_objection(this);
+    trans_overflow.start(e0.a0.s0);
+    #100
+    phase.drop_objection(this);
+  endtask
+endclass
+
+class test_NaN extends base_test;
+  `uvm_component_utils (test_NaN)
+  function new(string name = "test_NaN", uvm_component parent = null);
+    super.new(name, parent);
+  endfunction
+  
+  virtual function void build_phase(uvm_phase phase);
+    super.build_phase(phase);
+  endfunction
+  virtual task run_phase(uvm_phase phase);
+    item_sequence_NaN trans_NaN = item_sequence_NaN::type_id::create("trans_NaN");
+    trans_NaN.randomize();
+    `uvm_info("Escenario_2", $sformatf("\n Test Uso NaN\n"), UVM_LOW)
+    phase.raise_objection(this);
+    trans_NaN.start(e0.a0.s0);
     #100
     phase.drop_objection(this);
   endtask
