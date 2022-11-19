@@ -1,7 +1,7 @@
 rc file Version 1.0
 
 [Design]
-COMPILE_PATH=/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI (copy)
+COMPILE_PATH=/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI_(VERSIÓN ACTUAL)
 VCS_HOME=/mnt/vol_NFS_rh003/tools/vcs/R-2020.12-SP2
 VERDI_HOME=/mnt/vol_NFS_rh003/tools/verdi/R-2020.12-SP2
 SystemC=FALSE

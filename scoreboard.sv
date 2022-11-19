@@ -19,6 +19,7 @@ class scoreboard extends uvm_scoreboard;
 	bit sign_Z;
 	bit ovrf;
 	bit udrf;
+	int salida; 
 	
 
 	uvm_analysis_imp #(multiplication_item, scoreboard) m_analysis_imp;
@@ -192,8 +193,15 @@ class scoreboard extends uvm_scoreboard;
 				`uvm_info("Scoreboard", $sformatf("fp_X: %b", mul_item.fp_X), UVM_HIGH);
 				`uvm_info("Scoreboard", $sformatf("fp_Y: %b", mul_item.fp_Y), UVM_HIGH);
 			end
-		end
+
+			end
+			//Código para generar el reporte en formato .csv
+			salida = $fopen("salida_formato_csv.csv", "a");
+			$fwrite(salida, "\nRespuesta recibida X=%h Y=%h Z=%h", mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z);
+			$fwrite(salida, "\nRespuesta esperada X=%h Y=%h Z=%h", mul_item.fp_X, mul_item.fp_Y, out_Z);
+			$fwrite(salida, "\n-----------------------------------------------------------------------------------------------------------");
 
 	endfunction
+
 endclass
 

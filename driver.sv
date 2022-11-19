@@ -3,9 +3,8 @@ class driver extends uvm_driver #(multiplication_item);
 	 function new(string name = "driver", uvm_component parent = null);
 		 super.new(name, parent);
 	 endfunction
-
+	 int salida; int i = 0;
 	 virtual mul_if vif;
-
 	virtual function void build_phase(uvm_phase phase);
 		super.build_phase(phase);
 		if(!uvm_config_db#(virtual mul_if)::get(this, "", "mul_if", vif))
@@ -27,7 +26,13 @@ class driver extends uvm_driver #(multiplication_item);
 			  //vif.fp_X = mul_item.fp_X;
 			  //vif.fp_Y = mul_item.fp_Y;
 			seq_item_port.item_done();
-			`uvm_info("Driver", $sformatf("Objeto: r_mode %b fp_X %h fp_X %h delay %d tiempo %d", vif.r_mode, vif.fp_X, vif.fp_Y, mul_item.delay, mul_item.mul_time), UVM_LOW);
+			`uvm_info("Driver", $sformatf("Objeto: r_mode %b fp_X %h fp_X %h delay %d tiempo %d", vif.r_mode, vif.fp_X, vif.fp_Y, mul_item.delay, mul_item.mul_time), UVM_LOW);	
+		//Código para generar el reporte en formato .csv
+		salida = $fopen("salida_formato_csv.csv", "a");
+		$fwrite(salida, "\n-----------------------------------------------------------------------------------------------------------");
+		$fwrite(salida, "\nOperando número %d", i);
+		i = i+1;
+		$fwrite(salida, "\nOperando Enviado   X=%h Y=%h Z=%h", mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z);
 		end
 	endtask
       

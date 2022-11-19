@@ -1,6 +1,6 @@
 psSimBaseName                      	salida
 psLogFileName                      	log_test
-pDaiDir                            	/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI (copy)/salida.daidir
+pDaiDir                            	/home/ESTEBAN_CASTRO/VFCI-Esteban_Castro/Proyecto2/Proyecto2_VFCI_(VERSIÓN ACTUAL)/salida.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
 fHsimPCSharedLibSpecified          	0

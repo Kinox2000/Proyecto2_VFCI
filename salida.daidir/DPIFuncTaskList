@@ -80,3 +80,5 @@ import_DPI fsdbTransDPI_get_enum_id uvm_custom_install_verdi_recording
 import_DPI fsdbTransDPI_get_class_str uvm_custom_install_verdi_recording
 import_DPI getenv uvm_custom_install_verdi_recording
 DirectC SdisableFork 
+DirectC getCurSchedRegion 
+DirectC WmaskAndSet4 
