@@ -20,6 +20,7 @@ class scoreboard extends uvm_scoreboard;
 	bit ovrf;
 	bit udrf;
 	int salida; 
+	int errores;
 	
 
 	uvm_analysis_imp #(multiplication_item, scoreboard) m_analysis_imp;
@@ -43,6 +44,7 @@ class scoreboard extends uvm_scoreboard;
 		if((mul_item.fp_X[30:23]+mul_item.fp_Y[30:23])>=(8'b0111_1111+8'b1111_1111))begin
 			ovrf = 1'b1;
 			udrf = 1'b0;
+			`uvm_info("Scoreboard", $sformatf("Entró al overflow %d", mul_item.fp_X[30:23]+mul_item.fp_Y[30:23]), UVM_LOW);
 		end
 		e = mul_item.fp_X[30:23]+mul_item.fp_Y[30:23]-8'b0111_1111;
 		sign_Z = sign_X^sign_Y;
@@ -161,10 +163,18 @@ class scoreboard extends uvm_scoreboard;
 				if(mul_item.udrf != 1) begin
 					`uvm_error("Scoreboard", "No se activó la bandera de underflow")
 					`uvm_info("Scoreboard", $sformatf("udrf: %b", mul_item.udrf), UVM_HIGH);
+					errores = $fopen("errores_formato_csv.csv", "a");
+					$fwrite(errores, "\nRespuesta recibida X=%h Y=%h Z=%h udr_dut%h", mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z, mul_item.udrf);
+					$fwrite(errores, "\nRespuesta esperada X=%h Y=%h Z=%h udr_esperado=%h", mul_item.fp_X, mul_item.fp_Y, out_Z, udrf);
+					$fwrite(errores, "\n-----------------------------------------------------------------------------------------------------------");
 				end
 				if(out_Z[30:0]!=mul_item.fp_Z[30:0])begin
 					`uvm_error("Error", "Scoreboard y DUT no coinciden")
+					errores = $fopen("errores_formato_csv.csv", "a");
 					`uvm_info("Scoreboard: ", $sformatf("Udrf: Salida esperada: Salida del DUT: %b %b", out_Z, mul_item.fp_Z), UVM_LOW);
+					$fwrite(errores, "\nRespuesta recibida X=%h Y=%h Z=%h udr_dut%h", mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z, mul_item.udrf);
+					$fwrite(errores, "\nRespuesta esperada X=%h Y=%h Z=%h udr_esperado=%h", mul_item.fp_X, mul_item.fp_Y, out_Z, udrf);
+					$fwrite(errores, "\n-----------------------------------------------------------------------------------------------------------");
 				end
 			end
 			if(ovrf == 1'b1) begin
@@ -173,10 +183,18 @@ class scoreboard extends uvm_scoreboard;
 				if(mul_item.ovrf != 1) begin
 					`uvm_error("Scoreboard", "No se activó la bandera de overflow")
 					`uvm_info("Scoreboard", $sformatf("udrf: %b", mul_item.ovrf), UVM_HIGH);
+					errores = $fopen("errores_formato_csv.csv", "a");
+					$fwrite(errores, "\nRespuesta recibida X=%h Y=%h Z=%h ovrf_dut%h", mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z, mul_item.ovrf);
+					$fwrite(errores, "\nRespuesta esperada X=%h Y=%h Z=%h ovrf_esperado=%h", mul_item.fp_X, mul_item.fp_Y, out_Z, ovrf);
+					$fwrite(errores, "\n-----------------------------------------------------------------------------------------------------------");
 				end
 				if(out_Z[30:0]!=mul_item.fp_Z[30:0])begin
 					`uvm_error("Error", "Ovrf: Scoreboard y DUT no coinciden")
 					`uvm_info("Scoreboard", $sformatf("Salida esperada: Salida del DUT: %b %b", out_Z, mul_item.fp_Z), UVM_LOW);
+					errores = $fopen("errores_formato_csv.csv", "a");
+					$fwrite(errores, "\nRespuesta recibida X=%h Y=%h Z=%h ovrf_dut%h", mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z, mul_item.ovrf);
+					$fwrite(errores, "\nRespuesta esperada X=%h Y=%h Z=%h ovrf_esperado=%h", mul_item.fp_X, mul_item.fp_Y, out_Z, ovrf);
+					$fwrite(errores, "\n-----------------------------------------------------------------------------------------------------------");
 				end
 			end
 
@@ -192,6 +210,10 @@ class scoreboard extends uvm_scoreboard;
 				`uvm_info("Scoreboard", $sformatf("e_esperado: e_DUT: %b %b", out_Z[30:23], mul_item.fp_Z[30:23]), UVM_HIGH);
 				`uvm_info("Scoreboard", $sformatf("fp_X: %b", mul_item.fp_X), UVM_HIGH);
 				`uvm_info("Scoreboard", $sformatf("fp_Y: %b", mul_item.fp_Y), UVM_HIGH);
+				errores = $fopen("errores_formato_csv.csv", "a");
+				$fwrite(errores, "\nRespuesta recibida X=%h Y=%h Z=%h", mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z);
+				$fwrite(errores, "\nRespuesta esperada X=%h Y=%h Z=%h", mul_item.fp_X, mul_item.fp_Y, out_Z);
+				$fwrite(errores, "\n-----------------------------------------------------------------------------------------------------------");
 			end
 
 			end
