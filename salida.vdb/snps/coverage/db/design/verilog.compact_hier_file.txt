@@ -1,4 +1,0 @@
-\$unit::/mnt/vol_NFS_rh003/tools/vcs/R-2020.12-SP2/etc/uvm/macros/snps_macros.svp::/mnt/vol_NFS_rh003/tools/vcs/R-2020.12-SP2/etc/uvm/macros/uvm_callback_defines.svh...@242832153 00
-uvm_custom_install_recording4070
-uvm_custom_install_verdi_recording4070
-tb4070
