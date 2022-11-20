@@ -16,6 +16,7 @@ class item_sequence extends uvm_sequence;
 			mul_item.underflow.constraint_mode(0);
             		mul_item.overflow.constraint_mode(0);
 			mul_item.NaN.constraint_mode(0);
+			mul_item.inf.constraint_mode(0);
 			mul_item.randomize;
 			`uvm_info("Sequence", $sformatf("OBJETO NÚMERO %d ", i), UVM_LOW);
 			`uvm_info("Sequence", $sformatf("Objeto: num %d fp_X %h fp_Y %h r_mode %b delay %d", i, mul_item.fp_X, mul_item.fp_Y, mul_item.r_mode, mul_item.delay), UVM_LOW);
@@ -49,6 +50,7 @@ class item_sequence_sp extends uvm_sequence;
         mul_item_sp.underflow.constraint_mode(0);
         mul_item_sp.overflow.constraint_mode(0);
 	mul_item_sp.NaN.constraint_mode(0);
+	mul_item_sp.inf.constraint_mode(0);
         start_item(mul_item_sp);
         mul_item_sp.r_mode= this.r_mode;
         mul_item_sp.fp_X=this.fp_X;
@@ -77,6 +79,7 @@ class item_sequence_underflow extends uvm_sequence;
           mul_item_underflow.underflow.constraint_mode(1);
           mul_item_underflow.overflow.constraint_mode(0);
 	  mul_item_underflow.NaN.constraint_mode(0);
+	  mul_item_underflow.inf.constraint_mode(0);
           mul_item_underflow.randomize;
           start_item(mul_item_underflow);
 
@@ -102,6 +105,7 @@ class item_sequence_overflow extends uvm_sequence;
           multiplication_item mul_item_overflow = multiplication_item::type_id::create("mul_item_overflow");
           mul_item_overflow.underflow.constraint_mode(0);
           mul_item_overflow.overflow.constraint_mode(1);
+	  mul_item_overflow.NaN.constraint_mode(0);
           mul_item_overflow.randomize;
           start_item(mul_item_overflow);
 
@@ -130,10 +134,40 @@ class item_sequence_NaN extends uvm_sequence;
 		  mul_item_NaN.underflow.constraint_mode(0);
 		  mul_item_NaN.overflow.constraint_mode(0);
 		  mul_item_NaN.NaN.constraint_mode(1);
+		  mul_item_NaN.inf.constraint_mode(0);
 		  mul_item_NaN.randomize;
 		  start_item(mul_item_NaN);
 		  `uvm_info("Sequence: ", $sformatf("Objeto: %0d %s", num_items, mul_item_NaN.print()), UVM_HIGH);
 		  finish_item(mul_item_NaN);
+		end
+    endtask
+endclass 
+
+
+
+//item_sequence_inf
+class item_sequence_inf extends uvm_sequence;
+	`uvm_object_utils(item_sequence_inf)
+  
+	function new(string name = "item_sequence_inf");
+		super.new(name);
+	endfunction
+
+	rand int num_items;
+
+    constraint num_items_cons {num_items >= 200; num_items <= 300;}
+
+	virtual task body();
+		for(int i = 0; i < num_items; i++)begin
+		  multiplication_item mul_item_inf = multiplication_item::type_id::create("mul_item_NaN");
+		  mul_item_inf.underflow.constraint_mode(0);
+		  mul_item_inf.overflow.constraint_mode(0);
+		  mul_item_inf.NaN.constraint_mode(0);
+		  mul_item_inf.inf.constraint_mode(1);
+		  mul_item_inf.randomize;
+		  start_item(mul_item_inf);
+		  `uvm_info("Sequence: ", $sformatf("Objeto: %0d %s", num_items, mul_item_inf.print()), UVM_HIGH);
+		  finish_item(mul_item_inf);
 		end
     endtask
 endclass 
