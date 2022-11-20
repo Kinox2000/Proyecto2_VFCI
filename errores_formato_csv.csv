@@ -3,488 +3,471 @@ Error de Underflow
 Respuesta recibida X=00000000 Y=00000000 Z=00000000 udr_dut=0
 Respuesta esperada X=00000000 Y=00000000 Z=00000000 udr_esperado=1
 -----------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=f6046eb4 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=f6046eb4 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=fe0572a5 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=fe0572a5 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=8b9e3f6e Y=b465c528 Z=008e089d udr_dut=0
-Respuesta esperada X=8b9e3f6e Y=b465c528 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=8b9e3f6e Y=b465c528 Z=008e089d udr_dut0
-Respuesta esperada X=8b9e3f6e Y=b465c528 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Respuesta recibida X=8b9e3f6e Y=b465c528 Z=008e089d
-Respuesta esperada X=8b9e3f6e Y=b465c528 Z=00000000
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=42eabea7 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=42eabea7 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=d4d021be Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=d4d021be Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=7ac5abc4 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=7ac5abc4 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=deb18dbe Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=deb18dbe Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=db195d6a Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=db195d6a Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=f661516e Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=f661516e Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=e2b8fe78 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=e2b8fe78 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=471e1c72 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=471e1c72 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=c6f300a0 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=c6f300a0 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=6f6810d5 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=6f6810d5 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=49213afa Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=49213afa Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=781c8fce Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=781c8fce Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=495f2b91 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=495f2b91 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=6dd8b60f Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=6dd8b60f Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=422244a0 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=422244a0 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=d1bc5713 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=d1bc5713 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=f2c159a4 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=f2c159a4 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=67660647 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=67660647 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=e70f6883 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=e70f6883 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=4b422936 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=4b422936 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=dc22c1e2 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=dc22c1e2 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=69f95e4d Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=69f95e4d Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=e3fcae30 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=e3fcae30 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=589f4fed Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=589f4fed Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=5ada8b84 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=5ada8b84 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=c111edf4 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=c111edf4 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=3ad505fc Y=057dc608 Z=00d32bb3 udr_dut=0
-Respuesta esperada X=3ad505fc Y=057dc608 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=3ad505fc Y=057dc608 Z=00d32bb3 udr_dut0
-Respuesta esperada X=3ad505fc Y=057dc608 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Respuesta recibida X=3ad505fc Y=057dc608 Z=00d32bb3
-Respuesta esperada X=3ad505fc Y=057dc608 Z=00000000
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=d21da8c4 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=d21da8c4 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=4da1956d Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=4da1956d Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=53b7b24b Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=53b7b24b Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=ed7df5e8 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=ed7df5e8 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=49ca5b10 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=49ca5b10 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=d9bf819b Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=d9bf819b Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=ab9873eb Y=9473830b Z=00910412 udr_dut=0
-Respuesta esperada X=ab9873eb Y=9473830b Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=ab9873eb Y=9473830b Z=00910412 udr_dut0
-Respuesta esperada X=ab9873eb Y=9473830b Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Respuesta recibida X=ab9873eb Y=9473830b Z=00910412
-Respuesta esperada X=ab9873eb Y=9473830b Z=00000000
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=41248d55 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=41248d55 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=70b07ea8 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=70b07ea8 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=79a8dc6f Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=79a8dc6f Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=d24a1b81 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=d24a1b81 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=51b03e42 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=51b03e42 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=e0167577 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=e0167577 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=54e8ea29 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=54e8ea29 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=f0c61098 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=f0c61098 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=ed37b3b8 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=ed37b3b8 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=db69858d Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=db69858d Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=c793a0c1 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=c793a0c1 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=4a0fa2ba Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=4a0fa2ba Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=db49d4b9 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=db49d4b9 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=e56bb4b6 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=e56bb4b6 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=c1dd9419 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=c1dd9419 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=490db4f7 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=490db4f7 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=dc782fc7 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=dc782fc7 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=416f5b4f Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=416f5b4f Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=5a371461 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=5a371461 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=54c4b289 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=54c4b289 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=531bc847 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=531bc847 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=e6c49afa Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=e6c49afa Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=cd3184e3 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=cd3184e3 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=67127cd8 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=67127cd8 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=680b010f Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=680b010f Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=d8fa73f7 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=d8fa73f7 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=74c1cf18 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=74c1cf18 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=543ebf82 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=543ebf82 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=56aed414 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=56aed414 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=c2c0269a Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=c2c0269a Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=52087ac3 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=52087ac3 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=4bc0bb5c Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=4bc0bb5c Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=f90c5ffc Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=f90c5ffc Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=4f23b629 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=4f23b629 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=4d427c5b Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=4d427c5b Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=70108938 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=70108938 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=527f9d67 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=527f9d67 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=f806b5e7 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=f806b5e7 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=4542b2e2 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=4542b2e2 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=5bac8f96 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=5bac8f96 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=50790fbb Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=50790fbb Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=c24e9678 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=c24e9678 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=5cbeca1b Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=5cbeca1b Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=410c705e Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=410c705e Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=fdcee083 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=fdcee083 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=edb972a9 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=edb972a9 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=6c3b73b9 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=6c3b73b9 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=e62eea0e Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=e62eea0e Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=efcb4d3d Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=efcb4d3d Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=4e952391 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=4e952391 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=551a0a28 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=551a0a28 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=71caedb9 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=71caedb9 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=57065c7a Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=57065c7a Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=618cc603 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=618cc603 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=75455353 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=75455353 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=59e4ea17 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=59e4ea17 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=ee6f812f Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=ee6f812f Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=cf937314 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=cf937314 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=42d74e4c Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=42d74e4c Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=6133115f Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=6133115f Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=e06c02b1 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=e06c02b1 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=795c3270 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=795c3270 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=62da8b52 Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=62da8b52 Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=613ce450 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=613ce450 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=f3041005 Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=f3041005 Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=fd8f456c Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=fd8f456c Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=c07c7152 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=c07c7152 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=fed973bd Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=fed973bd Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=7603b11a Y=80000000 Z=80000000 udr_dut=0
-Respuesta esperada X=7603b11a Y=80000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=fd48bddc Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=fd48bddc Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=e592079c Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=e592079c Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=f869f27a Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=f869f27a Y=80000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=6b60fe77 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=6b60fe77 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=e44cef7c Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=e44cef7c Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=c6b05e5b Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=c6b05e5b Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=ddbf73f7 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=ddbf73f7 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=f3b35504 Y=00000000 Z=80000000 udr_dut=0
-Respuesta esperada X=f3b35504 Y=00000000 Z=80000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=52171122 Y=00000000 Z=00000000 udr_dut=0
-Respuesta esperada X=52171122 Y=00000000 Z=00000000 udr_esperado=1
------------------------------------------------------------------------------------------------------------
-Error de Underflow
-Respuesta recibida X=c74663ec Y=80000000 Z=00000000 udr_dut=0
-Respuesta esperada X=c74663ec Y=80000000 Z=00000000 udr_esperado=1
+Error de NaN
+Respuesta recibida X=8b9e3f6e Y=7f9ad8ce Z=7fc00000
+Respuesta esperada X=8b9e3f6e Y=7f9ad8ce Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=b79dcf81 Y=7fb1bf83 Z=7fc00000
+Respuesta esperada X=b79dcf81 Y=7fb1bf83 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=974b453d Y=7fc236a6 Z=7fc00000
+Respuesta esperada X=974b453d Y=7fc236a6 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=d4d021be Y=7fb6fad5 Z=7fc00000
+Respuesta esperada X=d4d021be Y=7fb6fad5 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=1aea9d48 Y=ff8c2051 Z=7fc00000
+Respuesta esperada X=1aea9d48 Y=ff8c2051 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=e2b8fe78 Y=7fc7e7ba Z=7fc00000
+Respuesta esperada X=e2b8fe78 Y=7fc7e7ba Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=6f6810d5 Y=ffca4554 Z=7fc00000
+Respuesta esperada X=6f6810d5 Y=ffca4554 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=781c8fce Y=ff99ae07 Z=7fc00000
+Respuesta esperada X=781c8fce Y=ff99ae07 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=495f2b91 Y=ffd577a2 Z=7fc00000
+Respuesta esperada X=495f2b91 Y=ffd577a2 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=6dd8b60f Y=ffe4067f Z=7fc00000
+Respuesta esperada X=6dd8b60f Y=ffe4067f Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=d1bc5713 Y=7f8bfb67 Z=7fc00000
+Respuesta esperada X=d1bc5713 Y=7f8bfb67 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=e70f6883 Y=7f937545 Z=7fc00000
+Respuesta esperada X=e70f6883 Y=7f937545 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=1e67eb6e Y=ffe51e38 Z=7fc00000
+Respuesta esperada X=1e67eb6e Y=ffe51e38 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=37b857c8 Y=ffe8451e Z=7fc00000
+Respuesta esperada X=37b857c8 Y=ffe8451e Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=a977e83e Y=7fe3a2fa Z=7fc00000
+Respuesta esperada X=a977e83e Y=7fe3a2fa Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=08dfa408 Y=ffdb7b7c Z=7fc00000
+Respuesta esperada X=08dfa408 Y=ffdb7b7c Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=e3fcae30 Y=7fff1093 Z=7fc00000
+Respuesta esperada X=e3fcae30 Y=7fff1093 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=589f4fed Y=ffa9ce40 Z=7fc00000
+Respuesta esperada X=589f4fed Y=ffa9ce40 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=5ada8b84 Y=ff828255 Z=7fc00000
+Respuesta esperada X=5ada8b84 Y=ff828255 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=0a376b73 Y=ffd6ff5e Z=7fc00000
+Respuesta esperada X=0a376b73 Y=ffd6ff5e Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=2001871f Y=ffc2f704 Z=7fc00000
+Respuesta esperada X=2001871f Y=ffc2f704 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=3ad505fc Y=ffcf5af9 Z=7fc00000
+Respuesta esperada X=3ad505fc Y=ffcf5af9 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=53b7b24b Y=ffe9c459 Z=7fc00000
+Respuesta esperada X=53b7b24b Y=ffe9c459 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=288d8a29 Y=ff9abbad Z=7fc00000
+Respuesta esperada X=288d8a29 Y=ff9abbad Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=09702b49 Y=ff96f5c4 Z=7fc00000
+Respuesta esperada X=09702b49 Y=ff96f5c4 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=ed7df5e8 Y=7fd24253 Z=7fc00000
+Respuesta esperada X=ed7df5e8 Y=7fd24253 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=49ca5b10 Y=ffc33c41 Z=7fc00000
+Respuesta esperada X=49ca5b10 Y=ffc33c41 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=d9bf819b Y=7fd36ab9 Z=7fc00000
+Respuesta esperada X=d9bf819b Y=7fd36ab9 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=41248d55 Y=ff94b555 Z=7fc00000
+Respuesta esperada X=41248d55 Y=ff94b555 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=79a8dc6f Y=ff9fca44 Z=7fc00000
+Respuesta esperada X=79a8dc6f Y=ff9fca44 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=2ad53bb8 Y=ffcf1546 Z=7fc00000
+Respuesta esperada X=2ad53bb8 Y=ffcf1546 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=018579e0 Y=ffdb00c6 Z=7fc00000
+Respuesta esperada X=018579e0 Y=ffdb00c6 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=947d9488 Y=7facfbc0 Z=7fc00000
+Respuesta esperada X=947d9488 Y=7facfbc0 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=16dfe93d Y=ff8fafc2 Z=7fc00000
+Respuesta esperada X=16dfe93d Y=ff8fafc2 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=94fe1e80 Y=7fe5ba32 Z=7fc00000
+Respuesta esperada X=94fe1e80 Y=7fe5ba32 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=2e904d4d Y=ffb86ea5 Z=7fc00000
+Respuesta esperada X=2e904d4d Y=ffb86ea5 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=51b03e42 Y=fff29f83 Z=7fc00000
+Respuesta esperada X=51b03e42 Y=fff29f83 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=54e8ea29 Y=ff9e66e4 Z=7fc00000
+Respuesta esperada X=54e8ea29 Y=ff9e66e4 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=f0c61098 Y=7fabc2d6 Z=7fc00000
+Respuesta esperada X=f0c61098 Y=7fabc2d6 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=ed37b3b8 Y=7fcc4907 Z=7fc00000
+Respuesta esperada X=ed37b3b8 Y=7fcc4907 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=8d335ee0 Y=7fceb1c9 Z=7fc00000
+Respuesta esperada X=8d335ee0 Y=7fceb1c9 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=23b16991 Y=ffcd8af6 Z=7fc00000
+Respuesta esperada X=23b16991 Y=ffcd8af6 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=db49d4b9 Y=7fd7e4cf Z=7fc00000
+Respuesta esperada X=db49d4b9 Y=7fd7e4cf Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=e56bb4b6 Y=7fbd2860 Z=7fc00000
+Respuesta esperada X=e56bb4b6 Y=7fbd2860 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=36fc1aef Y=fff278a4 Z=7fc00000
+Respuesta esperada X=36fc1aef Y=fff278a4 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=2360ffae Y=ffb71c16 Z=7fc00000
+Respuesta esperada X=2360ffae Y=ffb71c16 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=394c3ce2 Y=ff8b33e7 Z=7fc00000
+Respuesta esperada X=394c3ce2 Y=ff8b33e7 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=dc782fc7 Y=7fa2d561 Z=7fc00000
+Respuesta esperada X=dc782fc7 Y=7fa2d561 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=416f5b4f Y=ff939d91 Z=7fc00000
+Respuesta esperada X=416f5b4f Y=ff939d91 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=8c0d8cfe Y=7f97648c Z=7fc00000
+Respuesta esperada X=8c0d8cfe Y=7f97648c Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=54c4b289 Y=ffec4189 Z=7fc00000
+Respuesta esperada X=54c4b289 Y=ffec4189 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=1ece5c1d Y=ffe057c6 Z=7fc00000
+Respuesta esperada X=1ece5c1d Y=ffe057c6 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=b576cec8 Y=7fda3d06 Z=7fc00000
+Respuesta esperada X=b576cec8 Y=7fda3d06 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=e6c49afa Y=7faa1770 Z=7fc00000
+Respuesta esperada X=e6c49afa Y=7faa1770 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=680b010f Y=ff8c74cf Z=7fc00000
+Respuesta esperada X=680b010f Y=ff8c74cf Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=d8fa73f7 Y=7faa1edb Z=7fc00000
+Respuesta esperada X=d8fa73f7 Y=7faa1edb Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=15d3abc6 Y=ffc6925b Z=7fc00000
+Respuesta esperada X=15d3abc6 Y=ffc6925b Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=1bd86b60 Y=ffb315c0 Z=7fc00000
+Respuesta esperada X=1bd86b60 Y=ffb315c0 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=17740e17 Y=ff8d606a Z=7fc00000
+Respuesta esperada X=17740e17 Y=ff8d606a Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=90e496a6 Y=7f88ed3e Z=7fc00000
+Respuesta esperada X=90e496a6 Y=7f88ed3e Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=c2c0269a Y=7fbfe6f6 Z=7fc00000
+Respuesta esperada X=c2c0269a Y=7fbfe6f6 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=52087ac3 Y=ff836a22 Z=7fc00000
+Respuesta esperada X=52087ac3 Y=ff836a22 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=4bc0bb5c Y=ffd431a7 Z=7fc00000
+Respuesta esperada X=4bc0bb5c Y=ffd431a7 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=1c02978d Y=ff843cd3 Z=7fc00000
+Respuesta esperada X=1c02978d Y=ff843cd3 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=878d3b63 Y=7fe909c6 Z=7fc00000
+Respuesta esperada X=878d3b63 Y=7fe909c6 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=f90c5ffc Y=7fbad671 Z=7fc00000
+Respuesta esperada X=f90c5ffc Y=7fbad671 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=b0c7c8da Y=7fe9dd5b Z=7fc00000
+Respuesta esperada X=b0c7c8da Y=7fe9dd5b Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=066071c5 Y=ff92e42a Z=7fc00000
+Respuesta esperada X=066071c5 Y=ff92e42a Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=527f9d67 Y=ffa890e0 Z=7fc00000
+Respuesta esperada X=527f9d67 Y=ffa890e0 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=4542b2e2 Y=fff663b8 Z=7fc00000
+Respuesta esperada X=4542b2e2 Y=fff663b8 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=5bac8f96 Y=ffb390fe Z=7fc00000
+Respuesta esperada X=5bac8f96 Y=ffb390fe Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=10f75194 Y=fff902bd Z=7fc00000
+Respuesta esperada X=10f75194 Y=fff902bd Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=88dd251d Y=7fadc521 Z=7fc00000
+Respuesta esperada X=88dd251d Y=7fadc521 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=50790fbb Y=ffeffe79 Z=7fc00000
+Respuesta esperada X=50790fbb Y=ffeffe79 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=5cbeca1b Y=ffdc0993 Z=7fc00000
+Respuesta esperada X=5cbeca1b Y=ffdc0993 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=410c705e Y=ffc90348 Z=7fc00000
+Respuesta esperada X=410c705e Y=ffc90348 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=fdcee083 Y=7fd6f7e2 Z=7fc00000
+Respuesta esperada X=fdcee083 Y=7fd6f7e2 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=976dbdef Y=7fb18c63 Z=7fc00000
+Respuesta esperada X=976dbdef Y=7fb18c63 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=4e952391 Y=ffec22da Z=7fc00000
+Respuesta esperada X=4e952391 Y=ffec22da Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=0f0b1dfc Y=ffcc0e8a Z=7fc00000
+Respuesta esperada X=0f0b1dfc Y=ffcc0e8a Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=551a0a28 Y=fff2c90e Z=7fc00000
+Respuesta esperada X=551a0a28 Y=fff2c90e Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=86c5f323 Y=7f88df0c Z=7fc00000
+Respuesta esperada X=86c5f323 Y=7f88df0c Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=71caedb9 Y=ffa9e69c Z=7fc00000
+Respuesta esperada X=71caedb9 Y=ffa9e69c Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=a4c6b196 Y=7fb6c773 Z=7fc00000
+Respuesta esperada X=a4c6b196 Y=7fb6c773 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=a0d9cb53 Y=7fc23222 Z=7fc00000
+Respuesta esperada X=a0d9cb53 Y=7fc23222 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=618cc603 Y=ff94f9b1 Z=7fc00000
+Respuesta esperada X=618cc603 Y=ff94f9b1 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=9d1ae037 Y=7ff0cec1 Z=7fc00000
+Respuesta esperada X=9d1ae037 Y=7ff0cec1 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=59e4ea17 Y=ffeb27a8 Z=7fc00000
+Respuesta esperada X=59e4ea17 Y=ffeb27a8 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=ee6f812f Y=7fa78e35 Z=7fc00000
+Respuesta esperada X=ee6f812f Y=7fa78e35 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=cf937314 Y=7ff85c0b Z=7fc00000
+Respuesta esperada X=cf937314 Y=7ff85c0b Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=42d74e4c Y=ff90a8e0 Z=7fc00000
+Respuesta esperada X=42d74e4c Y=ff90a8e0 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=2a8a27fa Y=ffe82e25 Z=7fc00000
+Respuesta esperada X=2a8a27fa Y=ffe82e25 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=e06c02b1 Y=7fac1aa5 Z=7fc00000
+Respuesta esperada X=e06c02b1 Y=7fac1aa5 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=8113347c Y=7fab17ce Z=7fc00000
+Respuesta esperada X=8113347c Y=7fab17ce Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=2d4ba690 Y=ffb64e63 Z=7fc00000
+Respuesta esperada X=2d4ba690 Y=ffb64e63 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=a5dc52d0 Y=7fadeb89 Z=7fc00000
+Respuesta esperada X=a5dc52d0 Y=7fadeb89 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=8be26375 Y=7f8d8f52 Z=7fc00000
+Respuesta esperada X=8be26375 Y=7f8d8f52 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=795c3270 Y=ffb26207 Z=7fc00000
+Respuesta esperada X=795c3270 Y=ffb26207 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=29d065de Y=ffdf43a4 Z=7fc00000
+Respuesta esperada X=29d065de Y=ffdf43a4 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=a502c6ed Y=7fd5e808 Z=7fc00000
+Respuesta esperada X=a502c6ed Y=7fd5e808 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=0b78e737 Y=ffc6e836 Z=7fc00000
+Respuesta esperada X=0b78e737 Y=ffc6e836 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=62da8b52 Y=fff662b4 Z=7fc00000
+Respuesta esperada X=62da8b52 Y=fff662b4 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=fd8f456c Y=7fb08f63 Z=7fc00000
+Respuesta esperada X=fd8f456c Y=7fb08f63 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=c07c7152 Y=7ff6dd62 Z=7fc00000
+Respuesta esperada X=c07c7152 Y=7ff6dd62 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=b91c2b6d Y=7fcbb0d7 Z=7fc00000
+Respuesta esperada X=b91c2b6d Y=7fcbb0d7 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=7603b11a Y=ffa9ab41 Z=7fc00000
+Respuesta esperada X=7603b11a Y=ffa9ab41 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=fd48bddc Y=7ff2671c Z=7fc00000
+Respuesta esperada X=fd48bddc Y=7ff2671c Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=96347544 Y=7fbc2761 Z=7fc00000
+Respuesta esperada X=96347544 Y=7fbc2761 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=87d5dc65 Y=7fb8d350 Z=7fc00000
+Respuesta esperada X=87d5dc65 Y=7fb8d350 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=e44cef7c Y=7fac1a57 Z=7fc00000
+Respuesta esperada X=e44cef7c Y=7fac1a57 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=c6b05e5b Y=7fb798f6 Z=7fc00000
+Respuesta esperada X=c6b05e5b Y=7fb798f6 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=8964fa86 Y=7fcc40d2 Z=7fc00000
+Respuesta esperada X=8964fa86 Y=7fcc40d2 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=07a6c15e Y=ffce337d Z=7fc00000
+Respuesta esperada X=07a6c15e Y=ffce337d Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=ddbf73f7 Y=7ff4d2ae Z=7fc00000
+Respuesta esperada X=ddbf73f7 Y=7ff4d2ae Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=f3b35504 Y=7f9c1ce0 Z=7fc00000
+Respuesta esperada X=f3b35504 Y=7f9c1ce0 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=37c8ed15 Y=ffa78476 Z=7fc00000
+Respuesta esperada X=37c8ed15 Y=ffa78476 Z=ffc00000
+-----------------------------------------------------------------------------------------------------------
+Error de NaN
+Respuesta recibida X=2e63b0c4 Y=ffee47bf Z=7fc00000
+Respuesta esperada X=2e63b0c4 Y=ffee47bf Z=ffc00000
 -----------------------------------------------------------------------------------------------------------

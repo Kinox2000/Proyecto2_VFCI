@@ -186,9 +186,9 @@ class scoreboard extends uvm_scoreboard;
       end
 
 		if(out_Z == mul_item.fp_Z) begin
-          `uvm_info("Scoreboard", $sformatf("Correcto"), UVM_LOW);
-          `uvm_info("Scoreboard", $sformatf("Salida esperada : %h", out_Z), UVM_HIGH);
-          `uvm_info("Scoreboard", $sformatf("Salida esperada dut: %h", mul_item.fp_Z), UVM_HIGH);
+		  `uvm_info("Scoreboard", $sformatf("Correcto"), UVM_LOW);
+		  `uvm_info("Scoreboard", $sformatf("Salida esperada : %h", out_Z), UVM_HIGH);
+		  `uvm_info("Scoreboard", $sformatf("Salida esperada dut: %h", mul_item.fp_Z), UVM_HIGH);
 		end
 
 		if(udrf == 1'b1) begin
@@ -235,22 +235,22 @@ class scoreboard extends uvm_scoreboard;
 				$fwrite(errores, "\n-----------------------------------------------------------------------------------------------------------");
 			end
 		end
-        else if(NaN == 1'b1) begin
-            out_Z[30:0] = 31'b1111_1111_1000_0000_0000_0000_0000_000;
-            `uvm_info("Scoreboard", $sformatf("Exp NaN NaN: %b", ovrf), UVM_HIGH);
-             if(out_Z[30:0]!=mul_item.fp_Z[30:0])begin
-               `uvm_error("Error", " NaN: Scoreboard y DUT no coinciden")
-               `uvm_info("Scoreboard: ", $sformatf("NaN: Salida esperada: Salida del DUT: %d %d", out_Z, mul_item.fp_Z), UVM_HIGH);
-		$fwrite(errores, "\nError de NaN");
-		errores = $fopen("errores_formato_csv.csv", "a");
-		$fwrite(errores, "\nRespuesta recibida X=%h Y=%h Z=%h ovrf_dut%h", mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z, mul_item.ovrf);
-		$fwrite(errores, "\nRespuesta esperada X=%h Y=%h Z=%h ovrf_esperado=%h", mul_item.fp_X, mul_item.fp_Y, out_Z, ovrf);
-		$fwrite(errores, "\n-----------------------------------------------------------------------------------------------------------");
-             end
+		else if(NaN == 1'b1) begin
+		    out_Z[30:0] = 31'b1111_1111_1000_0000_0000_0000_0000_000;
+		    `uvm_info("Scoreboard", $sformatf("Exp NaN NaN: %b", ovrf), UVM_HIGH);
+		     if(out_Z[31:0]!=mul_item.fp_Z[31:0])begin
+		       `uvm_error("Error", " NaN: Scoreboard y DUT no coinciden")
+		       `uvm_info("Scoreboard: ", $sformatf("NaN: Salida esperada: Salida del DUT: %d %d", out_Z, mul_item.fp_Z), UVM_HIGH);
+			errores = $fopen("errores_formato_csv.csv", "a");
+			$fwrite(errores, "\nError de NaN");
+			$fwrite(errores, "\nRespuesta recibida X=%h Y=%h Z=%h", mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z);
+			$fwrite(errores, "\nRespuesta esperada X=%h Y=%h Z=%h", mul_item.fp_X, mul_item.fp_Y, out_Z);
+			$fwrite(errores, "\n-----------------------------------------------------------------------------------------------------------");
+		     end
         end
 
 
-        if (out_Z != mul_item.fp_Z) begin
+        if (out_Z != mul_item.fp_Z & NaN != 1'b1 & ovrf != 1'b1 & udrf != 1'b1) begin
 			`uvm_error("Error", "Scoreboard y DUT no coinciden-----")
 			`uvm_info("Scoreboard", $sformatf("Redondeo: %b", mul_item.r_mode), UVM_HIGH);
 			`uvm_info("Scoreboard", $sformatf("Signo: %b", sign_Z), UVM_HIGH);

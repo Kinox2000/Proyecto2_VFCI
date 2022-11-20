@@ -6,7 +6,7 @@ class item_sequence extends uvm_sequence;
 
 	rand int num_items;
 
-  constraint num_items_cons {num_items >= 100; num_items <= 1000;}
+  constraint num_items_cons {num_items >= 500; num_items <= 1000;}
 
 	virtual task body();
 		`uvm_info("Sequence", $sformatf("Número de objetos generados: %b", num_items), UVM_LOW);
@@ -95,7 +95,7 @@ class item_sequence_overflow extends uvm_sequence;
 	rand int num_items;
 
 
-  constraint num_items_cons {num_items >= 5; num_items <= 10;}
+  constraint num_items_cons {num_items >= 200; num_items <= 300;}
 
 	virtual task body();
 		for(int i = 0; i < num_items; i++)begin
@@ -122,13 +122,14 @@ class item_sequence_NaN extends uvm_sequence;
 
 	rand int num_items;
 
-    constraint num_items_cons {num_items >= 5; num_items <= 10;}
+    constraint num_items_cons {num_items >= 200; num_items <= 300;}
 
 	virtual task body();
 		for(int i = 0; i < num_items; i++)begin
 		  multiplication_item mul_item_NaN = multiplication_item::type_id::create("mul_item_NaN");
 		  mul_item_NaN.underflow.constraint_mode(0);
 		  mul_item_NaN.overflow.constraint_mode(0);
+		  mul_item_NaN.NaN.constraint_mode(1);
 		  mul_item_NaN.randomize;
 		  start_item(mul_item_NaN);
 		  `uvm_info("Sequence: ", $sformatf("Objeto: %0d %s", num_items, mul_item_NaN.print()), UVM_HIGH);
