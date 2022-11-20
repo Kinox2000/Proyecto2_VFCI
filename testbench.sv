@@ -1,4 +1,5 @@
 //`timescale 1ns/ps
+//Se inluyen los archivos necesarios para correr la verificación
 `include "uvm_macros.svh"
 `define LENGTH 32
 import uvm_pkg::*;
@@ -17,7 +18,7 @@ module tb;
 	reg clk;
 
 	always #10 clk = ~clk;
-	mul_if _if(.clk(clk));
+	mul_if _if(.clk(clk));//Interfaz para comunicarse con el DUT
 
 	top u0 (.clk(_if.clk),
 		 .r_mode(_if.r_mode), 
@@ -28,9 +29,8 @@ module tb;
 		 .udrf(_if.udrf));
 	 initial begin
 		 clk <= 0;
-       uvm_top.set_report_verbosity_level(UVM_HIGH);
-		 uvm_config_db #(virtual mul_if)::set(null, "uvm_test_top", "_if", _if);
-		 //run_test("test_random");
+       		 //uvm_top.set_report_verbosity_level(UVM_HIGH);
+		 uvm_config_db #(virtual mul_if)::set(null, "uvm_test_top", "_if", _if);//Se guarda la interfaz en la base de datos
 		run_test();
 	 end
 

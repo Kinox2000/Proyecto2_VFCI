@@ -23,6 +23,7 @@ class item_sequence extends uvm_sequence;
 		end
         endtask
 endclass
+
 //item para valores especificos como max alternancia
 class item_sequence_sp extends uvm_sequence;
 	`uvm_object_utils_begin(item_sequence_sp)
@@ -108,6 +109,8 @@ class item_sequence_overflow extends uvm_sequence;
 		end
     endtask
 endclass 
+
+
 //item_sequence_NaN
 class item_sequence_NaN extends uvm_sequence;
 	`uvm_object_utils(item_sequence_NaN)
