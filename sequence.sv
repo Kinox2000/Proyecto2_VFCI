@@ -76,6 +76,7 @@ class item_sequence_underflow extends uvm_sequence;
           multiplication_item mul_item_underflow = multiplication_item::type_id::create("mul_item_underflow");
           mul_item_underflow.underflow.constraint_mode(1);
           mul_item_underflow.overflow.constraint_mode(0);
+	  mul_item_underflow.NaN.constraint_mode(0);
           mul_item_underflow.randomize;
           start_item(mul_item_underflow);
 

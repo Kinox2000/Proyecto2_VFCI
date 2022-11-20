@@ -172,33 +172,34 @@ class scoreboard extends uvm_scoreboard;
       if (udrf == 1'b1) begin
         out_Z[30:23]=8'b0000_0000;
         out_Z[22:0]=23'b000_0000_0000_0000_0000_0000;
-        `uvm_info("Scoreboard pruebaaaaaaaa UNDERFLOW", $sformatf("OUT: %b %b %b %b", out_Z, sign_Z, e,frc_Z), UVM_HIGH);
+        `uvm_info("Scoreboard prueba de UNDERFLOW", $sformatf("OUT: %b %b %b %b", out_Z, sign_Z, e,frc_Z), UVM_HIGH);
       end
       else if (ovrf == 1'b1)begin
         out_Z[30:23]=8'b1111_1111;
         out_Z[22:0]=23'b000_0000_0000_0000_0000_0000;
-        `uvm_info("Scoreboard pruebaaaaaaaa OVERFLOW", $sformatf("OUT: %b %b %b %b", out_Z, sign_Z, e,frc_Z), UVM_HIGH);
+        `uvm_info("Scoreboard prueba de OVERFLOW", $sformatf("OUT: %b %b %b %b", out_Z, sign_Z, e,frc_Z), UVM_HIGH);
       end
       else if (NaN == 1'b1)begin
         out_Z[30:23]=8'b1111_1111;
         out_Z[22:0]=23'b100_0000_0000_0000_0000_0000;
-        `uvm_info("Scoreboard pruebaaaaaaaa NaN", $sformatf("OUT: %b %b %b %b", out_Z, sign_Z, e,frc_Z), UVM_HIGH);
+        `uvm_info("Scoreboard prueba de NaN", $sformatf("OUT: %b %b %b %b", out_Z, sign_Z, e,frc_Z), UVM_HIGH);
       end
 
 		if(out_Z == mul_item.fp_Z) begin
-          `uvm_info("Scoreboard", $sformatf("Correcto"), UVM_HIGH);
+          `uvm_info("Scoreboard", $sformatf("Correcto"), UVM_LOW);
           `uvm_info("Scoreboard", $sformatf("Salida esperada : %h", out_Z), UVM_HIGH);
           `uvm_info("Scoreboard", $sformatf("Salida esperada dut: %h", mul_item.fp_Z), UVM_HIGH);
 		end
 
 		if(udrf == 1'b1) begin
 			out_Z[30:0] = 31'b0000_0000_0000_0000_0000_0000_0000_000;
-          `uvm_info("Scoreboard", $sformatf("Exp underflow udrf: %b %b flag_dut", udrf, mul_item.udrf), UVM_HIGH);
+          		`uvm_info("Scoreboard", $sformatf("Exp underflow udrf: %b %b flag_dut", udrf, mul_item.udrf), UVM_HIGH);
 			if(mul_item.udrf != 1) begin
 				`uvm_error("Scoreboard", "No se activó la bandera de underflow")
 				`uvm_info("Scoreboard", $sformatf("udrf: %b", mul_item.udrf), UVM_HIGH);
 				errores = $fopen("errores_formato_csv.csv", "a");
-				$fwrite(errores, "\nRespuesta recibida X=%h Y=%h Z=%h udr_dut%h", mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z, mul_item.udrf);
+				$fwrite(errores, "\nError de Underflow");
+				$fwrite(errores, "\nRespuesta recibida X=%h Y=%h Z=%h udr_dut=%h", mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z, mul_item.udrf);
 				$fwrite(errores, "\nRespuesta esperada X=%h Y=%h Z=%h udr_esperado=%h", mul_item.fp_X, mul_item.fp_Y, out_Z, udrf);
 				$fwrite(errores, "\n-----------------------------------------------------------------------------------------------------------");
 			end
@@ -206,6 +207,7 @@ class scoreboard extends uvm_scoreboard;
                  		`uvm_error("Error", " udrf: Scoreboard y DUT no coinciden")
 				errores = $fopen("errores_formato_csv.csv", "a");
        				`uvm_info("Scoreboard: ", $sformatf("Udrf: Salida esperada: Salida del DUT: %d %d", out_Z, mul_item.fp_Z), UVM_HIGH);
+				$fwrite(errores, "\nError de Underflow");
 				$fwrite(errores, "\nRespuesta recibida X=%h Y=%h Z=%h udr_dut%h", mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z, mul_item.udrf);
 				$fwrite(errores, "\nRespuesta esperada X=%h Y=%h Z=%h udr_esperado=%h", mul_item.fp_X, mul_item.fp_Y, out_Z, udrf);
 				$fwrite(errores, "\n-----------------------------------------------------------------------------------------------------------");
@@ -217,6 +219,7 @@ class scoreboard extends uvm_scoreboard;
 			if(mul_item.ovrf != 1) begin
 				`uvm_error("Scoreboard", "No se activó la bandera de overflow")
                  		`uvm_info("Scoreboard", $sformatf("ovrf: %b", mul_item.ovrf), UVM_HIGH);
+				$fwrite(errores, "\nError de Overflow");
 				errores = $fopen("errores_formato_csv.csv", "a");
 				$fwrite(errores, "\nRespuesta recibida X=%h Y=%h Z=%h ovrf_dut%h", mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z, mul_item.ovrf);
 				$fwrite(errores, "\nRespuesta esperada X=%h Y=%h Z=%h ovrf_esperado=%h", mul_item.fp_X, mul_item.fp_Y, out_Z, ovrf);
@@ -226,6 +229,7 @@ class scoreboard extends uvm_scoreboard;
 				`uvm_error("Error", "Ovrf: Scoreboard y DUT no coinciden")
                  		`uvm_info("Scoreboard", $sformatf("ovrf: Salida esperada: Salida del DUT: %b %b", out_Z, mul_item.fp_Z), UVM_LOW);
 				errores = $fopen("errores_formato_csv.csv", "a");
+				$fwrite(errores, "\nError de Overflow");
 				$fwrite(errores, "\nRespuesta recibida X=%h Y=%h Z=%h ovrf_dut%h", mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z, mul_item.ovrf);
 				$fwrite(errores, "\nRespuesta esperada X=%h Y=%h Z=%h ovrf_esperado=%h", mul_item.fp_X, mul_item.fp_Y, out_Z, ovrf);
 				$fwrite(errores, "\n-----------------------------------------------------------------------------------------------------------");
@@ -237,6 +241,7 @@ class scoreboard extends uvm_scoreboard;
              if(out_Z[30:0]!=mul_item.fp_Z[30:0])begin
                `uvm_error("Error", " NaN: Scoreboard y DUT no coinciden")
                `uvm_info("Scoreboard: ", $sformatf("NaN: Salida esperada: Salida del DUT: %d %d", out_Z, mul_item.fp_Z), UVM_HIGH);
+		$fwrite(errores, "\nError de NaN");
 		errores = $fopen("errores_formato_csv.csv", "a");
 		$fwrite(errores, "\nRespuesta recibida X=%h Y=%h Z=%h ovrf_dut%h", mul_item.fp_X, mul_item.fp_Y, mul_item.fp_Z, mul_item.ovrf);
 		$fwrite(errores, "\nRespuesta esperada X=%h Y=%h Z=%h ovrf_esperado=%h", mul_item.fp_X, mul_item.fp_Y, out_Z, ovrf);
