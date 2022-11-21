@@ -23,7 +23,6 @@ class scoreboard extends uvm_scoreboard;
    	bit NaN;
 	int salida; 
 	int errores;
-	
 
 	uvm_analysis_imp #(multiplication_item, scoreboard) m_analysis_imp;
 
@@ -75,6 +74,11 @@ class scoreboard extends uvm_scoreboard;
         if(frc_Z_full[47] == 1'b1) begin //normaliza el dato
 			frc_Z_norm = frc_Z_full[47:21];
 			e = e+1'b1;
+			if(sum_e==8'b0111_1111)begin
+				udrf = 0;
+				e = sum_e-8'b0111_1110;
+			end
+			
 		end
 		else if (frc_Z_full[47] == 1'b0) begin
 			frc_Z_full = frc_Z_full << 1'b1;

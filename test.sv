@@ -26,7 +26,7 @@ class test_random extends base_test;//Este test genera datos de entrada random p
   virtual function void build_phase(uvm_phase phase);
     super.build_phase(phase);
   endfunction
-  
+
   virtual task run_phase(uvm_phase phase);
     item_sequence trans_random = item_sequence::type_id::create("trans_random");
     trans_random.randomize();
@@ -50,7 +50,6 @@ class test_max_alter extends base_test;//Este test genera datos que alternen los
   endfunction
   
   virtual task run_phase(uvm_phase phase);
-    
     foreach (operadores [i])begin
       foreach (operadores [j])begin
         item_sequence_sp trans_max_alter = item_sequence_sp::type_id::create("trans_max_alter");
