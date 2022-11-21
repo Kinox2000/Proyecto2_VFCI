@@ -3,7 +3,7 @@
 `include "uvm_macros.svh"
 `define LENGTH 32
 import uvm_pkg::*;
-`include "multiplicador_32_bits_FP_IEEE.sv"
+`include "multiplicador_32_bits_FP_IEEE(debugeado).sv"
 `include "interface.sv"
 `include "sequence_item.sv"
 `include "sequence.sv"
@@ -35,9 +35,9 @@ module tb;
        		 //uvm_top.set_report_verbosity_level(UVM_HIGH);
 		 uvm_config_db #(virtual mul_if)::set(null, "uvm_test_top", "_if", _if);//Se guarda la interfaz en la base de datos
 		 //run_test("test_random");
-		 run_test("test_underflow");
+		 //run_test("test_underflow");
 		 //run_test("test_overflow");
-		 //run_test("test_NaN");
+		 run_test("test_NaN");
 		 //run_test("test_inf");
 		 //run_test("test_max_alter");
 	 end
