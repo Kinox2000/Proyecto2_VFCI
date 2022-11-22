@@ -71,7 +71,7 @@ class item_sequence_underflow extends uvm_sequence;
 	rand int num_items;
 
 
-  constraint num_items_cons {num_items >= 200; num_items <= 300;}
+  constraint num_items_cons {num_items >= 100; num_items <= 200;}
 
 	virtual task body();
 		for(int i = 0; i < num_items; i++)begin
@@ -98,7 +98,7 @@ class item_sequence_overflow extends uvm_sequence;
 	rand int num_items;
 
 
-  constraint num_items_cons {num_items >= 200; num_items <= 300;}
+  constraint num_items_cons {num_items >= 100; num_items <= 200;}
 
 	virtual task body();
 		for(int i = 0; i < num_items; i++)begin
@@ -126,7 +126,7 @@ class item_sequence_NaN extends uvm_sequence;
 
 	rand int num_items;
 
-    constraint num_items_cons {num_items >= 200; num_items <= 300;}
+    constraint num_items_cons {num_items >= 100; num_items <= 200;}
 
 	virtual task body();
 		for(int i = 0; i < num_items; i++)begin
@@ -155,7 +155,7 @@ class item_sequence_inf extends uvm_sequence;
 
 	rand int num_items;
 
-    constraint num_items_cons {num_items >= 200; num_items <= 300;}
+    constraint num_items_cons {num_items >= 100; num_items <= 200;}
 
 	virtual task body();
 		for(int i = 0; i < num_items; i++)begin
@@ -170,4 +170,29 @@ class item_sequence_inf extends uvm_sequence;
 		  finish_item(mul_item_inf);
 		end
     endtask
+endclass 
+//item_sequence_completo
+class item_sequence_completo extends uvm_sequence;
+	`uvm_object_utils(item_sequence_completo)
+  
+	function new(string name = "item_sequence_completo");
+		super.new(name);
+	endfunction
+
+	rand int num_items;
+	item_sequence seq1;
+	item_sequence_sp seq2;
+	item_sequence_overflow seq3;
+	item_sequence_underflow seq4;
+	item_sequence_NaN seq5;
+	item_sequence_inf seq6;
+
+	virtual task body();
+		  `uvm_do(seq1);
+		  `uvm_do(seq2);
+		  `uvm_do(seq3);
+		  `uvm_do(seq4);
+		  `uvm_do(seq5);
+		  `uvm_do(seq6);
+       endtask
 endclass 

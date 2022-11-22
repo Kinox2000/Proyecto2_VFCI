@@ -148,3 +148,22 @@ class test_inf extends base_test;//Este test solo genera entradas inf limitando 
     phase.drop_objection(this);
   endtask
 endclass
+class test_completo extends base_test;//Este test solo genera entradas inf limitando que el exponente de X sean 8'1111_1111 o el exponente de Y sea 8'1111_1111 y que sus bits [22:0] sean cero
+  `uvm_component_utils (test_completo)
+  function new(string name = "test_inf", uvm_component parent = null);
+    super.new(name, parent);
+  endfunction
+  
+  virtual function void build_phase(uvm_phase phase);
+    super.build_phase(phase);
+  endfunction
+  virtual task run_phase(uvm_phase phase);
+    item_sequence_completo trans_completo = item_sequence_completo::type_id::create("trans_completo");
+    trans_completo.randomize();
+    `uvm_info("Escenario test completo", $sformatf("\n Test de uso completo\n"), UVM_LOW)
+    phase.raise_objection(this);
+    trans_completo.start(e0.a0.s0);
+    #100
+    phase.drop_objection(this);
+  endtask
+endclass

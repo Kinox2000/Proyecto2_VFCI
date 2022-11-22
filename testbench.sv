@@ -34,7 +34,8 @@ module tb;
 	 initial begin
        		 //uvm_top.set_report_verbosity_level(UVM_HIGH);
 		 uvm_config_db #(virtual mul_if)::set(null, "uvm_test_top", "_if", _if);//Se guarda la interfaz en la base de datos
-		 run_test("test_random");
+		 run_test("test_completo");
+		 //run_test("test_random");
 		 //run_test("test_underflow");
 		 //run_test("test_overflow");
 		 //run_test("test_NaN");
