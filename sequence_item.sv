@@ -1,6 +1,6 @@
 class multiplication_item extends uvm_sequence_item;
 	`uvm_object_utils(multiplication_item)
-	randc bit [2:0] r_mode;
+	rand bit [2:0] r_mode;
 	randc bit [31:0] fp_X;
 	randc bit [31:0] fp_Y;
 	
@@ -16,7 +16,7 @@ class multiplication_item extends uvm_sequence_item;
 		super.new(name);
 	endfunction
 
-	constraint r {r_mode >= 0; r_mode <= 3;}//Constraint para randomizar el modo de redondeo 
+	constraint r {r_mode >= 0; r_mode < 5;}//Constraint para randomizar el modo de redondeo 
 	constraint X {fp_X[22:0] >= 0; fp_X[22:0] < 8388608;}//Constraint para randomizar los bits 22 a 0 para el test random
 	constraint X_e{fp_X[30:23] >= 0; fp_X[30:23] < 256;}//Constraint para randomizar los bits del exponente para el test random
 	constraint X_s{fp_X[31] >= 0; fp_X[31] <= 1;}//Constraint para randomizar el signo de la entrada

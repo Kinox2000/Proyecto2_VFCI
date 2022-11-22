@@ -6,7 +6,7 @@ class item_sequence extends uvm_sequence;
 
 	rand int num_items;
 
-  constraint num_items_cons {num_items >= 2000; num_items <= 3000;}
+  constraint num_items_cons {num_items >= 500; num_items <= 1000;}
 
 	virtual task body();
 		`uvm_info("Sequence", $sformatf("Número de objetos generados: %b", num_items), UVM_LOW);

@@ -713,16 +713,17 @@ module EXP(
   output ovrf, udrf);
   
   wire [8:0]buffer;
+  wire [22:0] buffer_2;
   
   assign buffer = exp_X + exp_Y;
   
   wire [7:0]bias;
-  
+
   assign bias = {7'b0111111, !norm};
   
   assign ovrf = {buffer >= {255 + bias}};
   assign udrf = {buffer <= bias};
-  
+
   assign exp_Z = exp_X + exp_Y - bias;
   
 endmodule
@@ -796,7 +797,7 @@ module FPM(
   assign frc_Y = fp_Y[22:0];
   
   assign sign_Z = fp_X[31] ^ fp_Y[31];
-  
+
   wire [47:0]frc_Z_full; //full multiplier output
   wire [26:0]frc_Z_norm; //with leading, guard, round and sticky bits
   wire [22:0]frc_Z; //rounded Z fraction bits
